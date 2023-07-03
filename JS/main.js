@@ -20,8 +20,9 @@
                 `Evviva! ${userName}  ${userSurname} Ha ricevuto uno sconto del 40% sul prezzo del suo biglietto. Ora il prezzo 
                 è di ${nuovPriceVec}.
                 ` 
-            )
-        } else if (userAge < 18) {
+                )
+        } 
+        else if (userAge < 18) {
             //applichiamo lo sconto del 20% per i minori di 18 anni
             let scontoMin = (firstPriceTicket - (firstPriceTicket * 0.2))
             let prezzoFinal1 = ( Math.round(scontoMin * 100) / 100 );
@@ -37,3 +38,4 @@
                 `
             );
         }
+        
